@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+button {
+
+    color: white;
+    background-color: transparent;
+
+    margin: .2rem;
+    padding: .3rem 0.7rem;
+    border: 1px solid white;
+
+    font-size: 1.8rem;
+}
+
+input {
+    background-color: black;
+    border: 1px solid white;
+    padding: .2rem;
+    color: white;
+}
+
+.cen {
+    color: red;
+}
+
+.personagemT {
+    color: rgb(21, 0, 255);
+}
+
+h1 {
+    font-size: 10rem;
+    color: red;
+}
+
+#imgChar {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid red;
+    transition: filter .5s linear;
+    opacity: 0;
+}
+
+.char {
+    filter: brightness(70%);
+    width: 20rem;
+    height: auto;
+    border: solid white;
+    box-shadow: .2rem .2rem 10rem white;
+    box-sizing: content-box;
+    
+}
+
+.polNick {
+    width: 20rem;
+    height: 5rem;
+    background-color: white;
+    font-size: 3.3rem;
+    font-family: 'Nothing You Could Do', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.charPol {
+    background-color: white;
+    border-width: .2rem .2rem .2rem .2rem;
+    transition: opacity 1s linear;
+    opacity: 0;
+}
+
+.char:hover {
+    transition: filter .5s cubic-bezier(0.175, 0.885, 0.32, 2), height .1s linear, width .1s linear;
+    filter: brightness(100%);
+    width: 22rem;
+}
+
+#fImg {
+    transform: rotateZ(-6deg);
+}
+
+#sImg {
+    transform: rotateZ(2deg);
+}
+
+#tImg {
+    transform: rotateZ(10deg);
+}
+
+.cena {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    animation: shake 0.1s 3;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-8px);
+        filter: sepia(50%);
+    }
+
+    50% {
+        transform: translateX(6px);
+    }
+
+    75% {
+        transform: translateX(-8px);
+        filter: sepia(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
